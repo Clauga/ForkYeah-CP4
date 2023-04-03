@@ -1,7 +1,11 @@
+import NavBar from "../components/NavBar";
+import RandomContent from "../components/RandomContent";
+
 function Random() {
   return (
     <div className="bg-grey">
-      <p>Hello</p>
+      <NavBar />
+      <RandomContent />
     </div>
   );
 }

@@ -1,7 +1,11 @@
+import NavBar from "../components/NavBar";
+import ProfileContent from "../components/ProfileContent";
+
 function Profile() {
   return (
     <div className="bg-grey">
-      <p>Hello</p>
+      <NavBar />
+      <ProfileContent />
     </div>
   );
 }

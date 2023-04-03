@@ -1,7 +1,11 @@
+import NavBar from "../components/NavBar";
+import AreasContent from "../components/AreasContent";
+
 function Areas() {
   return (
     <div className="bg-grey">
-      <p>Hello</p>
+      <NavBar />
+      <AreasContent />
     </div>
   );
 }
