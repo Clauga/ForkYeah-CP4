@@ -1,6 +1,6 @@
 import heart from "../assets/heart.png";
 
-function Conexion() {
+function Connection() {
   return (
     <div className="bg-white relative lg:py-20">
       <div
@@ -42,7 +42,7 @@ function Conexion() {
                     Email
                   </p>
                   <input
-                    placeholder=""
+                    placeholder="123@ex.com"
                     type="text"
                     className="border placeholder-gray-400 focus:outline-none
                   focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white
@@ -67,8 +67,8 @@ function Conexion() {
                 <div className="relative">
                   <button
                     type="button"
-                    className="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-indigo-500
-                  rounded-lg transition duration-200 hover:bg-indigo-600 ease"
+                    className="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-yellow
+                  rounded-lg transition duration-200 hover:ease"
                   >
                     Submit
                   </button>
@@ -77,7 +77,7 @@ function Conexion() {
             </div>
             <svg
               viewBox="0 0 91 91"
-              className="absolute top-0 left-0 z-0 w-32 h-32 -mt-12 -ml-12 text-yellow-300
+              className="absolute top-0 left-0 z-0 w-32 h-32 -mt-12 -ml-12 text-main-light
             fill-current"
             >
               <g stroke="none" strokeWidth="1" fillRule="evenodd">
@@ -169,7 +169,7 @@ function Conexion() {
             </svg>
             <svg
               viewBox="0 0 91 91"
-              className="absolute bottom-0 right-0 z-0 w-32 h-32 -mb-12 -mr-12 text-indigo-500
+              className="absolute bottom-0 right-0 z-0 w-32 h-32 -mb-12 -mr-12 text-main-light
             fill-current"
             >
               <g stroke="none" strokeWidth="1" fillRule="evenodd">
@@ -266,4 +266,4 @@ function Conexion() {
   );
 }
 
-export default Conexion;
+export default Connection;
