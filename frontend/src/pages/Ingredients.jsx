@@ -1,7 +1,19 @@
+import SearchInput from "../components/SearchInput";
+import NavBar from "../components/NavBar";
+import SideIngredients from "../components/SideIngredients";
+
 function Ingredients() {
   return (
-    <div className="bg-grey">
-      <p>Hello</p>
+    <div className="">
+      <NavBar />
+      <div className="flex flex-row">
+        <div className="w-1/2 order-last">
+          <SearchInput />
+        </div>
+        <div className="w-1/2 order-first">
+          <SideIngredients />
+        </div>
+      </div>
     </div>
   );
 }
