@@ -1,4 +1,4 @@
-function Ingredients() {
+function Conexion() {
   return (
     <div className="bg-grey">
       <p>Hello</p>
@@ -6,4 +6,4 @@ function Ingredients() {
   );
 }
 
-export default Ingredients;
+export default Conexion;

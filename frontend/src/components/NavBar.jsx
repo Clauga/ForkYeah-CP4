@@ -1,35 +1,36 @@
+import { Link } from "react-router-dom";
 import fork from "../assets/fork.png";
 
 function NavBar() {
   return (
-    <header className="bg-white shadow-lg h-24 hidden md:flex">
-      <a
-        href="/"
+    <header className="bg-white shadow-lg h-24 hidden md:flex border">
+      <Link
+        to="/"
         className="border flex-shrink-0 flex items-center justify-center px-2 lg:px-2 xl:px-3"
       >
         <img className="w-20 h-20" src={fork} alt="" />
-      </a>
-      <nav className="header-links contents font-semibold text-base lg:text-lg">
+      </Link>
+      <nav className="header-links contents font-semibold text-base lg:text-lg  ">
         <ul className="flex items-center ml-4 xl:ml-8 mr-auto">
           <li className="p-3 xl:p-6 active">
-            <a href="/">
+            <Link to="/Ingredients">
               <span>Ingredients</span>
-            </a>
+            </Link>
           </li>
           <li className="p-3 xl:p-6">
-            <a href="/">
+            <Link to="/Areas">
               <span>Areas</span>
-            </a>
+            </Link>
           </li>
           <li className="p-3 xl:p-6">
-            <a href="/">
+            <Link to="/Categories">
               <span>Categories</span>
-            </a>
+            </Link>
           </li>
           <li className="p-3 xl:p-6">
-            <a href="/">
+            <Link to="/Random">
               <span>Random</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -49,7 +50,6 @@ function NavBar() {
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                // className="svg-inline--fa fa-twitter fa-w-16 fa-9x"
               >
                 <path
                   fill="currentColor"
@@ -72,7 +72,6 @@ function NavBar() {
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
-                // className="svg-inline--fa fa-facebook-f fa-w-10 fa-7x"
               >
                 <path
                   fill="currentColor"
@@ -95,7 +94,6 @@ function NavBar() {
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
-                // className="svg-inline--fa fa-linkedin-in fa-w-14 fa-9x"
               >
                 <path
                   fill="currentColor"
@@ -118,7 +116,6 @@ function NavBar() {
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
-                // className="svg-inline--fa fa-instagram fa-w-14 fa-9x"
               >
                 <path
                   fill="currentColor"
@@ -132,7 +129,7 @@ function NavBar() {
       <div className="border flex items-center px-4 lg:px-6 xl:px-8">
         <button
           type="button"
-          className="bg-black hover:bg-gray-700 text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded"
+          className="bg-yellow hover:bg-main text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded"
         >
           Login
         </button>

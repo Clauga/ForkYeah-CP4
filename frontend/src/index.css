@@ -25,7 +25,12 @@ a.active {
 a.active img{
     stroke: white;
 }
-.header-links li span::before {
+.header-links li span {
+    position: relative;
+    z-index: 0;
+  }
+
+  .header-links li span::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -41,5 +46,5 @@ a.active img{
   }
 
   .header-links li:not(.active):hover span::before {
-    background-color: #ccc;
+    background-color: #FAE6B1;
   }
