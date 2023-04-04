@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ProfileTabs() {
   return (
     <div className="flex flex-wrap justify-center">
@@ -6,7 +8,7 @@ function ProfileTabs() {
           <li className="mr-2">
             <a
               href="/"
-              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 "
+              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-yellow hover:border-gray-300 "
             >
               My recipes
             </a>
@@ -14,7 +16,7 @@ function ProfileTabs() {
           <li className="mr-2">
             <a
               href="/"
-              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-yellow hover:border-gray-300"
             >
               My Favorites
             </a>
@@ -22,18 +24,18 @@ function ProfileTabs() {
           <li className="mr-2">
             <a
               href="/"
-              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 "
+              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-yellow hover:border-gray-300 "
             >
               Videos
             </a>
           </li>
           <li className="mr-2">
-            <a
-              href="/"
-              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 "
+            <Link
+              to="/Add-Recipe"
+              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-yellow hover:border-gray-300 "
             >
               Add new recipe
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

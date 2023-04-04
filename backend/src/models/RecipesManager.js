@@ -29,7 +29,7 @@ class RecipesManager extends AbstractManager {
 
   update(recipe) {
     return this.database.query(
-      `update ${this.table} set name = ?, instructions = ?, time = ?, difficulty = ?, url = ?, ram = ?, picture = ?, country =?, ingredients =?, where idrecipe = ?`,
+      `update ${this.table} set name = ?, instructions = ?, time = ?, difficulty = ?, url = ?, picture = ?, country =?, ingredients =?, where idrecipe = ?`,
       [
         recipe.name,
         recipe.instructions,

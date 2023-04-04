@@ -51,18 +51,18 @@ function ProfileContent() {
               </svg>
             </span>
           </div>
+          <div className="flex-1 flex flex-col items-center lg:items-end px-8 mt-2">
+            <div className="flex items-center space-x-4 mt-2">
+              <button
+                type="button"
+                className="flex items-center text-grey2 px-4 py-2 text-sm space-x-2 transition duration-100 hover:text-yellow hover:border-gray-300 underline"
+              >
+                <span>Edit Profile</span>
+              </button>
+            </div>
+          </div>
           <p className="text-gray-700">Senior Software Engineer</p>
           <p className="text-sm text-gray-500">New York, USA</p>
-        </div>
-        <div className="flex-1 flex flex-col items-center lg:items-end justify-end px-8 mt-2">
-          <div className="flex items-center space-x-4 mt-2">
-            <button
-              type="button"
-              className="flex items-center bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded text-sm space-x-2 transition duration-100"
-            >
-              <span>Edit Profile</span>
-            </button>
-          </div>
         </div>
         <ProfileTabs />
       </div>

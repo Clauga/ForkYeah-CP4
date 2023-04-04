@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Connection from "./pages/Connection";
 import Areas from "./pages/Areas";
 import RecipeDetailsPage from "./pages/RecipeDetailsPage";
+import AddRecipe from "./pages/AddRecipe";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Random" element={<Random />} />
         <Route path="/Recipe-details" element={<RecipeDetailsPage />} />
+        <Route path="/Add-recipe" element={<AddRecipe />} />
       </Routes>
     </div>
   );
