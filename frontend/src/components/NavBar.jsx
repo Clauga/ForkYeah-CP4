@@ -127,12 +127,14 @@ function NavBar() {
         </ul>
       </nav>
       <div className="border flex items-center px-4 lg:px-6 xl:px-8">
-        <button
-          type="button"
-          className="rounded-[14px] bg-main-light hover:bg-main text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded"
-        >
-          Login
-        </button>
+        <Link to="/Connection">
+          <button
+            type="button"
+            className="rounded-[14px] bg-main-light hover:bg-main text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded"
+          >
+            Login
+          </button>
+        </Link>
       </div>
     </header>
   );
