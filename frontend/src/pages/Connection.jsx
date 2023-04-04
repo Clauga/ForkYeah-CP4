@@ -56,7 +56,7 @@ function Connection() {
                   Do you aready have one ?
                 </p>
                 <Link
-                  to="/Login"
+                  to="/profile"
                   type="button"
                   className="text-main-light font-semibold text-sm underline decoration-2 decoration-main-light"
                 >
@@ -116,13 +116,15 @@ function Connection() {
                   />
                 </div>
                 <div className="relative">
-                  <button
-                    type="submit"
-                    className="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-yellow
+                  <Link to="/profile">
+                    <button
+                      type="submit"
+                      className="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-yellow
                   rounded-lg transition duration-200 hover:ease"
-                  >
-                    Submit
-                  </button>
+                    >
+                      Submit
+                    </button>
+                  </Link>
                 </div>
               </form>
             </div>
