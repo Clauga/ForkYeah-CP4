@@ -29,6 +29,14 @@ pool.getConnection().catch(() => {
 
 const models = {};
 
+const UserManager = require("./UserManager");
+const RecipesManager = require("./RecipesManager");
+
+models.user = new UserManager();
+models.user.setDatabase(pool);
+
+models.recipe = new RecipesManager();
+models.recipe.setDatabase(pool);
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 
