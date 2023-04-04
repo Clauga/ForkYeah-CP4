@@ -2,8 +2,8 @@ import ProfileTabs from "./ProfileTabs";
 
 function ProfileContent() {
   return (
-    <div className="h-full p-8">
-      <div className="bg-white rounded-lg shadow-xl pb-8">
+    <div className="h-full p-8 mt-5">
+      <div className="bg-white rounded-lg shadow-lg pb-8">
         <div className="right-12 mt-4 rounded">
           <button
             type="button"
