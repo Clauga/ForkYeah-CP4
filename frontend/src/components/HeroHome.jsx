@@ -8,9 +8,9 @@ function HeroHome() {
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center sm:text-left">
-            <h1 className="text-4xl font-extrabold sm:text-5xl">
+            <h1 className="text-4xl font-extrabold sm:text-5xl mb-5">
               FORK YEAH!
-              <strong className="block text-3xl font-bold text-main">
+              <strong className="mt-5 block text-3xl font-bold text-main">
                 Because hunger is a serius business
               </strong>
             </h1>

@@ -1,22 +1,55 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable no-restricted-syntax */
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import DishDetails from "./DishDetails";
+import expressAPI from "../services/expressAPI";
+
 function RandomContent() {
+  const [recipe, setRecipe] = useState({});
+  const [count, setCount] = useState(0);
+  const [display, setDisplay] = useState("no");
+  const [show, setShow] = useState(true);
+  const { id } = useParams();
+  useEffect(() => {
+    expressAPI.get(`/recipes/${id}`).then((res) => {
+      setRecipe([res.data]);
+    });
+  }, []);
+
+  console.log(recipe);
+  const Arr = Object.entries(recipe);
+  const ingredientsArr = Arr.filter(
+    ([key, value]) => key.includes("strIngredient") && value !== ""
+  );
+  const measuresArr = Arr.filter(
+    ([key, value]) => key.includes("strMeasure") && value !== ""
+  );
+
+  const chooseRandom = () => {
+    setCount(count + 1);
+    setDisplay("yes");
+    setShow(false);
+  };
+
+  const tags = String(recipe.strTags).replaceAll(",", ", ");
   return (
     <div className="flex flex-col items-center justify-center mt-5">
-      {/* {/* {show ? ( */}
-      <div className="text-2xl font-semibold font-display text-black sm:text-3xl">
-        <h1>Have difficulty choosing what to eat?</h1>
-        <h2>Click the dice to make a decision!</h2>
-      </div>
-      {/* ) : (
-      ""
-    // )} */}
+      {show ? (
+        <div className="text-2xl font-semibold font-display text-black sm:text-3xl">
+          <h1>Have difficulty choosing what to eat?</h1>
+          <h2>Click the dice to make a decision!</h2>
+        </div>
+      ) : (
+        ""
+      )}
       <div className="mt-5 max-w-xl text-base text-gray-400">
         <p>(Continue click dice to change.)</p>
       </div>
 
-      <div
-        className="mt-5"
-        //   onClick={chooseRandom}
-      >
+      <div className="mt-5" onClick={chooseRandom}>
         <svg
           stroke="currentColor"
           fill="none"
@@ -47,25 +80,25 @@ function RandomContent() {
         </svg>
       </div>
 
-      {/* {display === "yes" ? (
-      <DishDetails
-        img={recipe.strMealThumb}
-        name={recipe.strMeal}
-        ingredients={ingredientsArr.map((i, index) => (
-          <li key={index}>{i[1]}</li>
-        ))}
-        measures={measuresArr.map((m, index) => (
-          <li key={index}>{m[1]}</li>
-        ))}
-        area={recipe.strArea}
-        category={recipe.strCategory}
-        tags={recipe.strTags ? <span>{tags}</span> : ""}
-        youtube={recipe.strYoutube}
-        instructions={recipe.strInstructions}
-      />
-    ) : (
-      ""
-    )} */}
+      {display === "yes" ? (
+        <DishDetails
+          img={recipe.strMealThumb}
+          name={recipe.strMeal}
+          ingredients={ingredientsArr.map((i, index) => (
+            <li key={index}>{i[1]}</li>
+          ))}
+          measures={measuresArr.map((m, index) => (
+            <li key={index}>{m[1]}</li>
+          ))}
+          area={recipe.strArea}
+          category={recipe.strCategory}
+          tags={recipe.strTags ? <span>{tags}</span> : ""}
+          youtube={recipe.strYoutube}
+          instructions={recipe.strInstructions}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }

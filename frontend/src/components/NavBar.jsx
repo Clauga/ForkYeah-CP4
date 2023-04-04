@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import fork from "../assets/fork.png";
+import user from "../assets/user.png";
 
 function NavBar() {
   return (
-    <header className="bg-white shadow-lg h-24 hidden md:flex border">
+    <header className="bg-white shadow-lg h-24 md:flex border">
       <Link
         to="/"
         className="border flex-shrink-0 flex items-center justify-center px-2 lg:px-2 xl:px-3"
@@ -11,8 +12,8 @@ function NavBar() {
         <img className="w-20 h-20" src={fork} alt="" />
       </Link>
       <nav className="header-links contents font-semibold text-base lg:text-lg  ">
-        <ul className="flex items-center ml-4 xl:ml-8 mr-auto">
-          <li className="p-3 xl:p-6 active">
+        <ul className="flex items-center ml-10  w-full">
+          <li className="p-3 xl:p-6 hover:active">
             <Link to="/Ingredients">
               <span>Ingredients</span>
             </Link>
@@ -34,7 +35,7 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-      <nav className="hidden xl:contents">
+      <nav className="mt-6 xl:contents">
         <ul className="flex items-center mr-4 lg:mr-6 xl:mr-8">
           <li className="p-1">
             <a
@@ -127,13 +128,8 @@ function NavBar() {
         </ul>
       </nav>
       <div className="border flex items-center px-4 lg:px-6 xl:px-8">
-        <Link to="/Connection">
-          <button
-            type="button"
-            className="rounded-[14px] bg-main-light hover:bg-main text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded"
-          >
-            Login
-          </button>
+        <Link to="/profile">
+          <img src={user} alt="" className="w-10" />
         </Link>
       </div>
     </header>

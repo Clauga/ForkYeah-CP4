@@ -28,7 +28,9 @@ module.exports = {
         grey4: "#F0F0F0",
         green: "#54A05C",
         red: "#FF3838",
+        soft: "#F9F1EC",
         background: "#FBF6EB",
+        blue: "#009DBE",
       },
       fontFamily: {
         zen: ["Zen Antique", "sans-serif"],
