@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProfileTabs from "./ProfileTabs";
 
 function ProfileContent() {
@@ -29,11 +30,11 @@ function ProfileContent() {
         <div className="flex flex-col items-center -mt-20">
           <img
             alt=""
-            src="https://vojislavd.com/ta-template-demo/assets/img/profile.jpg"
+            src="https://agendaculturel.emstorage.fr/suki-waterhouse-tmaster_rz7snyz1adfpk4-og-51088094.jpg"
             className="w-40 border-4 border-white rounded-full"
           />
           <div className="flex items-center space-x-2 mt-2">
-            <p className="text-2xl">Amanda Ross</p>
+            <p className="text-2xl">Suki Waterhouse</p>
             <span className="bg-blue-500 rounded-full p-1" title="Verified">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,16 +54,18 @@ function ProfileContent() {
           </div>
           <div className="flex-1 flex flex-col items-center lg:items-end px-8 mt-2">
             <div className="flex items-center space-x-4 mt-2">
-              <button
-                type="button"
-                className="flex items-center text-grey2 px-4 py-2 text-sm space-x-2 transition duration-100 hover:text-yellow hover:border-gray-300 underline"
-              >
-                <span>Edit Profile</span>
-              </button>
+              <Link to="/edit-profile">
+                <button
+                  type="button"
+                  className="flex items-center text-grey2 px-4 py-2 text-sm space-x-2 transition duration-100 hover:text-yellow hover:border-gray-300 underline"
+                >
+                  <span>Edit Profile</span>
+                </button>
+              </Link>
             </div>
           </div>
-          <p className="text-gray-700">Senior Software Engineer</p>
-          <p className="text-sm text-gray-500">New York, USA</p>
+          <p className="text-gray-700">Indie Musician</p>
+          <p className="text-sm text-gray-500">London, GB</p>
         </div>
         <ProfileTabs />
       </div>

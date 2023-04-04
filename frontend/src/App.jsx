@@ -8,6 +8,7 @@ import Connection from "./pages/Connection";
 import Areas from "./pages/Areas";
 import RecipeDetailsPage from "./pages/RecipeDetailsPage";
 import AddRecipe from "./pages/AddRecipe";
+import EditProfile from "./pages/EditProfile";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Random" element={<Random />} />
         <Route path="/Recipe-details" element={<RecipeDetailsPage />} />
         <Route path="/Add-recipe" element={<AddRecipe />} />
+        <Route path="/Edit-Profile" element={<EditProfile />} />
       </Routes>
     </div>
   );
