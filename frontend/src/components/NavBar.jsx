@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import fork from "../assets/fork.png";
 import user from "../assets/user.png";
+import Logout from "./Logout";
 
 function NavBar() {
   return (
@@ -127,10 +128,11 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-      <div className="border flex items-center px-4 lg:px-6 xl:px-8">
+      <div className="border flex items-center ">
         <Link to="/profile">
-          <img src={user} alt="" className="w-10" />
+          <img src={user} alt="" className="w-7 mr-5 ml-5" />
         </Link>
+        <Logout />
       </div>
     </header>
   );

@@ -13,7 +13,7 @@ function DishDetails(props) {
         <div className="fixed right-0">
           <Link to={props.youtube}>
             <button
-              className="block mt-10 w-40 px-4 py-3 font-medium hover:underline"
+              className="block mt-10 w-40 px-4 py-3 font-medium underline"
               type="button"
             >
               Watch on Youtube
