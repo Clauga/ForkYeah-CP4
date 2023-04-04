@@ -6,6 +6,7 @@ import Categories from "./pages/Categories";
 import Home from "./pages/Home";
 import Connection from "./pages/Connection";
 import Areas from "./pages/Areas";
+import RecipeDetailsPage from "./pages/RecipeDetailsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Ingredients" element={<Ingredients />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Random" element={<Random />} />
+        <Route path="/Recipe-details" element={<RecipeDetailsPage />} />
       </Routes>
     </div>
   );
