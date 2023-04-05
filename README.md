@@ -1,7 +1,9 @@
 ## Concept
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
+Looking for meal inspiration? Look no further than our website! We understand that it can be difficult to decide what to eat every day, which is why we offer a wide variety of delicious and easy-to-follow recipes. Whether you're a beginner cook or an experienced chef, our site has something for everyone. With step-by-step instructions and ingredient lists, you can create healthy and satisfying meals that are sure to impress. Say goodbye to boring meals and hello to a world of culinary creativity with our website!
+
+## Wireframes + DB
+https://www.figma.com/file/tvnOMhbw4s44VBsZGzTfV6/Fork-Yeah!?node-id=0-1&t=9Wyn5gD1kRb0M7Lj-0
 
 ## Setup & Use
 
